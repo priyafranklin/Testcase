@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="DemoSuite">
+
+<test name="menuPage">
+    <classes>      
+      <class name="BestBuy.menuPageTestCase">
+      <methods>
+		  <include name ="TopDeals"/>
+		  <include name ="DealoftheDay"/>
+			<include name ="CreditCards"/>  
+		   <include name ="Giftcards"/>
+		   <include name ="selectitem"/>
+		   <include name ="contactInformation"/>
+	  </methods>
+      </class>
+    </classes>
+  </test>
+  <test name="BestBuyHomePage">
+    <classes>     
+      <class name="BestBuy.BestBuyHomePage">
+      <methods>
+		  <include name ="navigatedriver"/>
+		  		  	   
+	  </methods>
+	  </class>
+   </classes> 
+  </test>
+  
+  
+  <test name="BestBuyLoginPage">
+    <classes>     
+      <class name="BestBuy.BestBuyLoginPageTestCase">
+      <methods>
+		  <include name ="setCountry"/>
+		  <include name ="openLoginPage"/>
+		   <include name ="signInButton"/>
+		   <include name ="previousPage"/> 		  	   
+	  </methods>
+	  </class>
+   </classes> 
+  </test>
+
+<test name="MainTestCase">
+<classes> 
+<class name="BestBuy.MainTestCases">
+<methods>
+<include name ="bestbuywebpage"/>
+<include name ="bestbuyloginwebpage"/>
+</methods>
+</class>
+</classes>
+</test>
+
+
+</suite> 
